@@ -1,0 +1,630 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    background: linear-gradient(90deg, #9e0404, #44062b, #9e0404);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientMove 4s ease infinite, glowEffect 1.5s ease-in-out infinite;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    text-shadow: 0 0 15px rgba(36, 4, 43, 0.8), 0 0 25px rgba(36, 4, 43, 0.6);
+}
+
+@keyframes glowEffect {
+    0%, 100% {
+        text-shadow: 0 0 10px rgba(158, 4, 4, 0.8), 0 0 15px rgba(68, 6, 43, 0.7);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(158, 4, 4, 1), 0 0 30px rgba(68, 6, 43, 0.9);
+    }
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background: url('rf41tMg.jpg') ;
+    background-size: cover;
+    animation: backgroundScroll 10s linear infinite;
+    color: white;
+    opacity: 1;
+    
+}
+    
+
+@keyframes backgroundScroll {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.navbar {
+    background: linear-gradient(to bottom, #0d0d0d, #24042b, #0d0d0d);
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    animation: slideDown 0.5s ease-in-out;
+}
+
+.navbar img {
+    width: 40px; 
+    height: auto;
+    margin-left: 20px;
+    animation: logoPulse 2s infinite
+}
+@keyframes logoPulse {
+    0%, 100% {
+        transform: scale(1);
+        filter: brightness(1);
+    }
+    50% {
+        transform: scale(1.1);
+        filter: brightness(1.5);
+    }
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+    gap: 20px;
+    animation: flyIn 0.8s ease-out;
+}
+.navbar ul li {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar ul li:hover {
+    color: #FF8A80;
+    transform: scale(1.2);
+}
+
+.navbar .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+
+.navbar .search-bar input {
+    border: none;
+    background: transparent;
+    color: white;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    width: 150px;
+}
+
+.navbar .search-bar button {
+    background-color: #FF8A80;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .search-bar button:hover {
+    background-color: #D95F59;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes flyIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 5px;
+    margin-left: auto;
+}
+
+.search-bar input {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    outline: none;
+    width: 200px;
+}
+
+.search-bar button {
+    background-color: #D95F59;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #FF8A80;
+}
+
+.game-container {
+    padding: 15px;
+    width: 25%;
+    background-color: rgba(36, 4, 43, 0.9);
+    border-radius: 10px;
+    border: 2px solid #D95F59;
+    margin: 30px;
+    color: aliceblue;
+    display: inline-block;
+    vertical-align: top;
+    animation: fadeIn 0.5s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+   padding: 10px;
+}
+
+.game-container {
+    padding: 15px;
+    width: 25%;
+    background-color: rgba(36, 4, 43, 0.9);
+    border-radius: 10px;
+    border: 2px solid #D95F59;
+    margin: 30px;
+    color: aliceblue;
+    display: inline-block;
+    vertical-align: top;
+    animation: fadeIn 0.5s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.game-container p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.game-container button {
+    background-color: #D95F59;
+    color: rgb(66, 5, 5);
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.game-container button:hover {
+    background-color: #FF8A80;
+    transform: scale(1.1);
+}
+
+.add-button {
+    background-color: #D95F59;
+    color: #24042b;
+    border-radius: 100%;
+    padding: 20px 30px;
+    font-size: 40px;
+    border: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-button:hover {
+    background-color: #FF8A80; 
+    color: white;
+    transform: scale(1.1); 
+}
+
+.add-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid transparent;
+    border-radius: 100%;
+    background: linear-gradient(45deg, #ff6f61, #ff3b3f, #ff6f61);
+    background-size: 400%;
+    animation: borderAnimation 2s infinite;
+    z-index: -1;
+    /* Add button animation */
+
+    background: linear-gradient(45deg, #ff6f61, #ff3b3f, #ff6f61);
+    animation: borderAnimation 2s infinite;
+
+}
+
+@keyframes borderAnimation {
+    0% {
+        background-position: 400% 0%;
+    }
+    50% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 400% 0%;
+    }
+}
+
+.popup-overlay {
+    background-color: rgba(36, 4, 43, 0.8);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+.popup-box {
+    background-color: rgba(255, 138, 128, 0.95);
+    width: 40%;
+    padding: 40px;
+    border-radius: 15px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    z-index: 2;
+    display: none;
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.popup-box input, .popup-box textarea {
+    background: transparent;
+    border: none;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border-bottom: 2px solid rgb(10, 1, 16);
+}
+
+.popup-box input::placeholder, .popup-box textarea::placeholder {
+    color: #24042b;
+}
+
+.popup-box button {
+    background-color: black;
+    color: aliceblue;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.popup-box button:hover {
+    background-color: #FF8A80;
+    transform: scale(1.1);
+}
+
+.popup-box input:focus, .popup-box textarea:focus {
+    outline: none;
+}
+/* Navbar design */
+.navbar {
+    background-color: rgba(255, 101, 0, 0.9);
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    animation: slideDown 0.5s ease-in-out;
+}
+
+/* Navbar logo animation */
+.navbar img {
+    width: 40px; 
+    height: auto;
+    margin-left: 20px; 
+    animation: logoPulse 2s infinite;
+}
+
+@keyframes logoPulse {
+    0%, 100% {
+        transform: scale(1);
+        filter: brightness(1);
+    }
+    50% {
+        transform: scale(1.1);
+        filter: brightness(1.5);
+    }
+}
+
+/* Navbar flyout gaming transition */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+    gap: 20px;
+    animation: flyIn 0.8s ease-out;
+}
+
+.navbar ul li {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar ul li:hover {
+    color: #FF8A80;
+    transform: scale(1.2);
+}
+
+/* Keyframes for navbar animations */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes flyIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+body {
+    cursor: url('Prepaidgamecards-Gaming-Gadgets-Gaming-Mouse.256.png'), auto;
+}
+
+.navbar {
+    background-color: rgba(255, 101, 0, 0.9);
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    animation: slideDown 0.5s ease-in-out;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 5px;
+    margin-left: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.search-bar input {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    outline: none;
+    width: 200px;
+    transition: width 0.3s ease-in-out;
+}
+
+.search-bar input:focus {
+    width: 250px;
+    box-shadow: 0 0 10px rgba(255, 101, 0, 0.8);
+}
+
+.search-bar input::placeholder {
+    color: #fff;
+}
+
+.search-bar button {
+    background-color: #D95F59;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #FF8A80;
+    transform: scale(1.1);
+}
+
+.container {
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.popup-box {
+    background-color: rgba(255, 138, 128, 0.95);
+    width: 40%;
+    padding: 40px;
+    border-radius: 15px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    z-index: 2;
+    display: none;
+    animation: slideIn 0.5s ease-out;
+}
+
+.popup-box input, .popup-box textarea {
+    background: transparent;
+    border: none;
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 2px solid rgb(10, 1, 16);
+}
+
+.popup-box input::placeholder, .popup-box textarea::placeholder {
+    color: #24042b;
+}
+
+.popup-box input[type="file"] {
+    margin-top: 10px;
+    padding: 8px;
+    color: white;
+    background-color: #D95F59;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-box input[type="file"]:hover {
+    background-color: #FF8A80;
+}
+
+.popup-box button {
+    background-color: black;
+    color: aliceblue;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.popup-box button:hover {
+    background-color: #FF8A80;
+    transform: scale(1.1);
+}
+
+.game-container {
+    padding: 15px;
+    width: 25%;
+    background-color: rgba(36, 4, 43, 0.9);
+    border-radius: 10px;
+    border: 2px solid #D95F59;
+    margin: 30px;
+    color: aliceblue;
+    display: inline-block;
+    vertical-align: top;
+    animation: fadeIn 0.5s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

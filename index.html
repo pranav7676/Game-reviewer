@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamiee Reverie</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Rubik:wght@300..900&family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <img src="gamer-reverie-icon.png" alt="Gamer Reverie Icon">
+        <h1>Gamiee Reverie</h1>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for a game...">
+            <button id="search-button">Search</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Game 1 -->
+        <div class="game-container">
+            <h2>Need for Speed: Most Wanted</h2>
+            <h5>EA Black Box</h5>
+            <p>
+                Need for Speed: Most Wanted is one of the most iconic entries in the Need for Speed franchise and is often considered one of the best racing games of its time.
+            </p>
+            <button onclick="deletebox(event)">Delete</button>
+            
+        </div>
+
+        <!-- Game 2 -->
+        <div class="game-container">
+            <h2>Elden Ring</h2>
+            <h5>FromSoftware</h5>
+            <p>
+                Elden Ring is an open-world action role-playing game developed by FromSoftware. It has received immense critical acclaim for its intricate world-building and challenging gameplay.
+            </p>
+            <button onclick="deletebox(event)">Delete</button>
+        </div>
+
+        <!-- Game 3 -->
+        <div class="game-container">
+            <h2>Tomb Raider</h2>
+            <h5>Crystal Dynamics</h5>
+            <p>
+                Tomb Raider follows the adventures of Lara Croft in her quest to uncover ancient secrets. Known for its gripping story and adventurous gameplay, it's a staple in the action-adventure genre.
+            </p>
+            <button onclick="deletebox(event)">Delete</button>
+        </div>
+
+        <!-- Game 4 -->
+        <div class="game-container">
+            <h2>Grand Theft Auto V</h2>
+            <h5>Rockstar Games</h5>
+            <p>
+                Grand Theft Auto V is an open-world action-adventure game. Set in the fictional city of Los Santos, it offers an expansive world filled with missions, heists, and endless activities.
+            </p>
+            <button onclick="deletebox(event)">Delete</button>
+        </div>
+
+        <!-- Game 5 -->
+        <div class="game-container">
+            <h2>The Witcher 3: Wild Hunt</h2>
+            <h5>CD Projekt Red</h5>
+            <p>
+                The Witcher 3 is an action role-playing game that follows Geralt of Rivia as he searches for his adopted daughter. The game is praised for its deep story, open world, and engaging gameplay.
+            </p>
+            <button onclick="deletebox(event)">Delete</button>
+        </div>
+
+        <!-- Game 6 -->
+        <div class="game-container">
+            <h2>Red Dead Redemption 2</h2>
+            <h5>Rockstar Games</h5>
+            <p>
+                Red Dead Redemption 2 is a Western-themed action-adventure game. Set in 1899, it follows Arthur Morgan and the Van der Linde gang as they deal with the changing world and law enforcement.
+            </p>
+            <button onclick="deletebox(event)">Delete</button>
+        </div>
+
+        <!-- Game 7 -->
+        <div class="game-container">
+            <h2>Cyberpunk 2077</h2>
+            <h5>CD Projekt Red</h5>
+            <p>
+                Cyberpunk 2077 is an open-world RPG set in the dystopian Night City. Players control V, a mercenary with a customizable past, on a quest for immortality.
+            </p>
+            <button onclick="deletebox(event)">Delete</button>
+        </div>
+
+        <!-- Game 8 -->
+        <div class="game-container">
+            <h2>Call of Duty: Modern Warfare II</h2>
+            <h5>Infinity Ward</h5>
+            <p>
+                Modern Warfare II is a first-person shooter game and the sequel to 2019's Modern Warfare. It offers thrilling combat experiences and an engaging single-player campaign.
+            </p>
+            <button onclick="deletebox(event)">Delete</button>
+        </div>
+
+        <!-- Game 9 -->
+        <div class="game-container">
+            <h2>Assassin's Creed Odyssey</h2>
+            <h5>Ubisoft</h5>
+            <p>
+                Assassin's Creed Odyssey is an action RPG set in Ancient Greece. It features a vast open world with deep narrative choices, combat, and exploration.
+            </p>
+            <button onclick="deletebox(event)">Delete</button>
+        </div>
+
+        <!-- Game 10 -->
+        <div class="game-container">
+            <h2>Fortnite</h2>
+            <h5>Epic Games</h5>
+            <p>
+                Fortnite is a free-to-play battle royale game where players compete to be the last one standing. Its constantly evolving world and events keep players coming back.
+            </p>
+            <button onclick="deletebox(event)">Delete</button>
+        </div>
+
+        <!-- Game 11 -->
+        <div class="game-container">
+            <h2>League of Legends</h2>
+            <h5>Riot Games</h5>
+            <p>
+                League of Legends is a multiplayer online battle arena (MOBA) where players control champions and work together to destroy the enemy's Nexus. It's known for its competitive nature and strategy.
+            </p>
+            <button onclick="deletebox(event)">Delete</button>
+        </div>
+
+        <!-- Game 12 -->
+        <div class="game-container">
+            <h2>Overwatch 2</h2>
+            <h5>Blizzard Entertainment</h5>
+            <p>
+                Overwatch 2 is a team-based first-person shooter that focuses on objective-based gameplay. Players select from various heroes with unique abilities to complete objectives.
+            </p>
+            <button onclick="deletebox(event)">Delete</button>
+        </div>
+
+        <!-- Game 13 -->
+        <div class="game-container">
+            <h2>FIFA 23</h2>
+            <h5>EA Sports</h5>
+            <p>
+                FIFA 23 is the latest entry in the FIFA football series. It features realistic graphics, updated teams, and a variety of gameplay modes, including Ultimate Team.
+            </p>
+            <button onclick="deletebox(event)">Delete</button>
+        </div>
+
+        <!-- Game 14 -->
+        <div class="game-container">
+            <h2>Animal Crossing: New Horizons</h2>
+            <h5>Nintendo</h5>
+            <p>
+                Animal Crossing: New Horizons is a life simulation game where players build their own island paradise. It's a relaxing experience with crafting, fishing, and villager interactions.
+            </p>
+            <button onclick="deletebox(event)">Delete</button>
+        </div>
+
+        <!-- Game 15 -->
+        <div class="game-container">
+            <h2>Minecraft</h2>
+            <h5>Mojang</h5>
+            <p>
+                Minecraft is a sandbox game where players build and explore a blocky world. It's known for its creative mode, survival mechanics, and vast community of creators.
+            </p>
+            <button onclick="deletebox(event)">Delete</button>
+        </div>
+
+        <!-- Game 16 -->
+        <div class="game-container">
+            <h2>Super Mario Odyssey</h2>
+            <h5>Nintendo</h5>
+            <p>
+                Super Mario Odyssey is a 3D platformer where Mario embarks on a global adventure to rescue Princess Peach. Its innovative mechanics and open-world exploration make it a standout title.
+            </p>
+            <button onclick="deletebox(event)">Delete</button>
+        </div>
+
+        <!-- Game 17 -->
+        <div class="game-container">
+            <h2>Hades</h2>
+            <h5>Supergiant Games</h5>
+            <p>
+                Hades is a rogue-like action game where players take on the role of Zagreus, the son of Hades, as he attempts to escape the underworld. Its fast-paced combat and deep narrative are highly praised.
+            </p>
+            <button onclick="deletebox(event)">Delete</button>
+        </div>
+
+        <!-- Game 18 -->
+        <div class="game-container">
+            <h2>Rocket League</h2>
+            <h5>Psyonix</h5>
+            <p>
+                Rocket League is a unique sports game that combines soccer with rocket-powered cars. It's fast-paced, competitive, and offers multiplayer fun for players of all ages.
+            </p>
+            <button onclick="deletebox(event)">Delete</button>
+        </div>
+
+        <!-- Game 19 -->
+        <div class="game-container">
+            <h2>Halo Infinite</h2>
+            <h5>343 Industries</h5>
+            <p>
+                Halo Infinite is a first-person shooter that continues the story of Master Chief. With a new open-world design, it delivers a fresh take on the iconic franchise.
+            </p>
+            <button onclick="deletebox(event)">Delete</button>
+        </div>
+
+        <!-- Game 20 -->
+        <div class="game-container">
+            <h2>Spiderman: Miles Morales</h2>
+            <h5>Insomniac Games</h5>
+            <p>
+                Spider-Man: Miles Morales is an action-packed superhero game where players control Miles Morales as he protects New York City. It features fluid combat and a compelling story.
+            </p>
+            <button onclick="deletebox(event)">Delete</button>
+        </div>
+
+    </div>
+
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Game</h2>
+        <form>
+            <input type="text" placeholder="Game title" id="game-title-input">
+            <input type="text" placeholder="Game Founder" id="game-founder-input">
+            <textarea placeholder="Short Review" id="game-review-input"></textarea>
+            <button id="add-game">ADD</button>
+            <button id="cancel-popup">CANCEL</button>
+        </form>
+    </div>
+
+    <button class="add-button" id="add-popup-button">+</button>
+
+</body>
+<script src="script.js"></script>
+</html>
+<div class="game-container">
+    <h2>Hitman 3</h2>
+    <h5>IO Interactive</h5>
+    <p>
+        Hitman 3 is the final chapter in the World of Assassination trilogy. It offers stealth-based gameplay where players control Agent 47 as he completes various assassination missions around the world.
+    </p>
+    <button onclick="deletebox(event)">Delete</button>
+</div>
+
+<!-- Game 22 -->
+<div class="game-container">
+    <h2>Monster Hunter: World</h2>
+    <h5>Capcom</h5>
+    <p>
+        Monster Hunter: World is an action RPG where players hunt giant monsters in an expansive open world. It emphasizes cooperation in multiplayer mode and offers various weapons and strategies.
+    </p>
+    <button onclick="deletebox(event)">Delete</button>
+</div>
+
+<!-- Game 23 -->
+<div class="game-container">
+    <h2>Dead by Daylight</h2>
+    <h5>Behaviour Interactive</h5>
+    <p>
+        Dead by Daylight is an asymmetric survival horror game where one player takes on the role of a killer and the others must work together to escape. The game features iconic horror movie villains.
+    </p>
+    <button onclick="deletebox(event)">Delete</button>
+</div>
+
+<!-- Game 24 -->
+<div class="game-container">
+    <h2>Dark Souls III</h2>
+    <h5>FromSoftware</h5>
+    <p>
+        Dark Souls III is an action RPG known for its punishing difficulty and intricate world design. It follows the story of the Ashen One as they battle through a dying world to defeat powerful enemies.
+    </p>
+    <button onclick="deletebox(event)">Delete</button>
+</div>
+
+<!-- Game 25 -->
+<div class="game-container">
+    <h2>Battlefield V</h2>
+    <h5>EA DICE</h5>
+    <p>
+        Battlefield V is a first-person shooter that immerses players in World War II. The game features large-scale multiplayer battles, destructible environments, and a variety of vehicles.
+    </p>
+    <button onclick="deletebox(event)">Delete</button>
+</div>
+
+<!-- Game 26 -->
+<div class="game-container">
+    <h2>The Legend of Zelda: Breath of the Wild</h2>
+    <h5>Nintendo</h5>
+    <p>
+        The Legend of Zelda: Breath of the Wild is an open-world action-adventure game. Players control Link as he explores Hyrule, solves puzzles, and battles enemies to defeat Ganon and save Princess Zelda.
+    </p>
+    <button onclick="deletebox(event)">Delete</button>
+</div>
+
+<!-- Game 27 -->
+<div class="game-container">
+    <h2>Subnautica</h2>
+    <h5>Unknown Worlds Entertainment</h5>
+    <p>
+        Subnautica is an open-world survival game set in the depths of an alien ocean. Players must gather resources, explore, and uncover secrets while surviving underwater.
+    </p>
+    <button onclick="deletebox(event)">Delete</button>
+</div>
+
+<!-- Game 28 -->
+<div class="game-container">
+    <h2>Sea of Thieves</h2>
+    <h5>Rare</h5>
+    <p>
+        Sea of Thieves is a multiplayer action-adventure game where players sail the seas as pirates, searching for treasure, battling enemies, and completing quests in a shared world.
+    </p>
+    <button onclick="deletebox(event)">Delete</button>
+</div>
+
+<!-- Game 29 -->
+<div class="game-container">
+    <h2>Stardew Valley</h2>
+    <h5>ConcernedApe</h5>
+    <p>
+        Stardew Valley is a farming simulation game where players inherit a rundown farm and must restore it while building relationships with the town's inhabitants. It's a relaxing and rewarding experience.
+    </p>
+    <button onclick="deletebox(event)">Delete</button>
+</div>
+
+<!-- Game 30 -->
+<div class="game-container">
+    <h2>Final Fantasy VII Remake</h2>
+    <h5>Square Enix</h5>
+    <p>
+        Final Fantasy VII Remake reimagines the classic RPG with updated graphics and real-time combat. It tells the story of Cloud Strife and his quest to stop the megacorporation Shinra from exploiting the planet.
+    </p>
+    <button onclick="deletebox(event)">Delete</button>
+</div>
+
+<!-- Game 31 -->
+<div class="game-container">
+    <h2>Persona 5 Royal</h2>
+    <h5>Atlus</h5>
+    <p>
+        Persona 5 Royal is a turn-based RPG that follows a group of high school students with the ability to enter the Metaverse and battle corrupted adults. The game is known for its deep story and social simulation.
+    </p>
+    <button onclick="deletebox(event)">Delete</button>
+</div>
+
+<!-- Game 32 -->
+<div class="game-container">
+    <h2>Gears 5</h2>
+    <h5>The Coalition</h5>
+    <p>
+        Gears 5 is a third-person shooter that follows Kait Diaz as she battles against the Swarm. The game features a cinematic story and cooperative multiplayer modes.
+    </p>
+    <button onclick="deletebox(event)">Delete</button>
+</div>
+
+<!-- Game 33 -->
+<div class="game-container">
+    <h2>Dragon Age: Inquisition</h2>
+    <h5>BioWare</h5>
+    <p>
+        Dragon Age: Inquisition is an action RPG set in the fantasy world of Thedas. Players control the Inquisitor and gather a team to combat the forces of darkness threatening the world.
+    </p>
+    <button onclick="deletebox(event)">Delete</button>
+</div>
+
+<!-- Game 34 -->
+<div class="game-container">
+    <h2>DOOM Eternal</h2>
+    <h5>id Software</h5>
+    <p>
+        DOOM Eternal is a fast-paced first-person shooter that follows the Doom Slayer as he battles demons across hellish landscapes. The game features brutal combat and an adrenaline-pumping soundtrack.
+    </p>
+    <button onclick="deletebox(event)">Delete</button>
+</div>
+
+<!-- Game 35 -->
+<div class="game-container">
+    <h2>Watch Dogs: Legion</h2>
+    <h5>Ubisoft</h5>
+    <p>
+        Watch Dogs: Legion is an open-world action game set in a dystopian London. Players can recruit any NPC to join their cause, each with unique abilities and skills.
+    </p>
+    <button onclick="deletebox(event)">Delete</button>
+</div>
+
+<!-- Game 36 -->
+<div class="game-container">
+    <h2>The Elder Scrolls V: Skyrim</h2>
+    <h5>Bethesda</h5>
+    <p>
+        Skyrim is an open-world RPG set in the Nordic region of Tamriel. Players take on the role of the Dragonborn and explore a world filled with dragons, magic, and quests.
+    </p>
+    <button onclick="deletebox(event)">Delete</button>
+</div>
+
+<!-- Game 37 -->
+<div class="game-container">
+    <h2>Spelunky 2</h2>
+    <h5>Mossmouth</h5>
+    <p>
+        Spelunky 2 is a challenging roguelike platformer where players explore procedurally generated caves. The game requires skillful jumping and problem-solving to survive its brutal traps and enemies.
+    </p>
+    <button onclick="deletebox(event)">Delete</button>
+</div>
+
+<!-- Game 38 -->
+<div class="game-container">
+    <h2>Hollow Knight</h2>
+    <h5>Team Cherry</h5>
+    <p>
+        Hollow Knight is a metroidvania action-adventure game set in a mysterious underground kingdom. It features tight platforming, difficult bosses, and an atmospheric world to explore.
+    </p>
+    <button onclick="deletebox(event)">Delete</button>
+</div>
+
+<!-- Game 39 -->
+<div class="game-container">
+    <h2>Bloodborne</h2>
+    <h5>FromSoftware</h5>
+    <p>
+        Bloodborne is an action RPG set in a gothic, nightmare-infested world. Players control a hunter as they battle terrifying creatures and uncover the mysteries behind the cursed city of Yharnam.
+    </p>
+    <button onclick="deletebox(event)">Delete</button>
+</div>
+
+<!-- Game 40 -->
+<div class="game-container">
+    <h2>Resident Evil Village</h2>
+    <h5>Capcom</h5>
+    <p>
+        Resident Evil Village is the eighth entry in the survival horror series. It follows Ethan Winters as he explores a mysterious village to rescue his daughter, facing horrifying monsters along the way.
+    </p>
+    <button onclick="deletebox(event)">Delete</button>
+</div>
+
+</div>
