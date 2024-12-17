@@ -3,56 +3,17 @@
     padding: 0;
 }
 
-h1 {
-    font-size: 48px;
-    font-family: "Russo One", sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-align: center;
-    background: linear-gradient(90deg, #9e0404, #44062b, #9e0404);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: gradientMove 4s ease infinite, glowEffect 1.5s ease-in-out infinite;
-    letter-spacing: 3px;
-    margin-top: 20px;
-    text-shadow: 0 0 15px rgba(36, 4, 43, 0.8), 0 0 25px rgba(36, 4, 43, 0.6);
-}
-
-@keyframes glowEffect {
-    0%, 100% {
-        text-shadow: 0 0 10px rgba(158, 4, 4, 0.8), 0 0 15px rgba(68, 6, 43, 0.7);
-    }
-    50% {
-        text-shadow: 0 0 20px rgba(158, 4, 4, 1), 0 0 30px rgba(68, 6, 43, 0.9);
-    }
-}
-
-@keyframes gradientMove {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
 body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    background: url('rf41tMg.jpg') ;
+    background: url('rf41tMg.jpg');
     background-size: cover;
-    animation: backgroundScroll 10s linear infinite;
+    animation: backgroundScroll 20s linear infinite; /* Slower background scroll */
     color: white;
     opacity: 1;
-    
 }
-    
 
 @keyframes backgroundScroll {
     0% {
@@ -416,7 +377,7 @@ body {
     }
 }
 
-/* Navbar flyout gaming transition */
+
 .navbar ul {
     display: flex;
     list-style: none;
